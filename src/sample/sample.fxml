@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox alignment="CENTER" layoutX="93.0" layoutY="42.0" prefHeight="425.0" prefWidth="696.0" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="42.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <children>
+                        <TextField fx:id="inpDest" prefHeight="60.0" prefWidth="350.0" promptText="Choose Destination Folder">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </TextField>
+                        <Button fx:id="btnBrowse" mnemonicParsing="false" onAction="#showDialog" prefHeight="60.0" prefWidth="150.0" text="Browse">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="inpUrl" onAction="#validate" prefHeight="60.0" prefWidth="525.0" promptText="Paste URL">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <Pane prefHeight="89.0" prefWidth="696.0" />
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="btnDownload" mnemonicParsing="false" onAction="#downlaod" prefHeight="60.0" prefWidth="525.0" text="Download">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="850.0">
+                    <children>
+                        <ProgressIndicator fx:id="prog" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
